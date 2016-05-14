@@ -63,18 +63,21 @@ public class ForecastFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.fragment_main, container, false);
 
-        List<String> weekForecast = new ArrayList<>(Arrays.asList("Today - Sunny - 22/16",
-                "Tomorrow - Foggy - 18/14",
-                "Weds - Cloudy - 19/13",
-                "Thurs - Rainy - 20/14",
-                "Fri - Foggy - 16/12",
-                "Sat - Sunny - 21/15",
-                "Sun - Sunny - 24/17"));
+        List<String> weekForecast = new ArrayList<>(
+                Arrays.asList(
+                        "Today - Sunny - 22/16",
+                        "Tomorrow - Foggy - 18/14",
+                        "Weds - Cloudy - 19/13",
+                        "Thurs - Rainy - 20/14",
+                        "Fri - Foggy - 16/12",
+                        "Sat - Sunny - 21/15",
+                        "Sun - Sunny - 24/17"
+                )
+        );
 
         mForecastAdapter = new ArrayAdapter<>(
                 getActivity(),
@@ -266,6 +269,7 @@ public class ForecastFragment extends Fragment {
                     return null;
                 }
                 forecastJsonStr = buffer.toString();
+                Log.v(LOG_TAG, "Foreacast JSON String: " + forecastJsonStr);
             } catch (IOException e) {
                 Log.e(LOG_TAG, "Error ", e);
                 // If the code didn't successfully get the weather data, there's no point in attempting
