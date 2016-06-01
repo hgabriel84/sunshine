@@ -1,2 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/home/hgabriel/AndroidStudioProjects/udacity/sunshine/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="bd160a12a76a4d5ca7636ee0c3de6fb53c1a64b5">
+        <dex dex="/home/hgabriel/AndroidStudioProjects/udacity/sunshine/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_8dda77fde959a9a988a18cb3a459183ab93ffd98/classes.dex" />
+    </item>
+
+</items>

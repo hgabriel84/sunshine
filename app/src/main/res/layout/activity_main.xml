@@ -21,9 +21,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <fragment
         android:id="@+id/fragment"
         android:name="udacity.hgabriel.sunshine.ForecastFragment"
         android:layout_width="match_parent"
